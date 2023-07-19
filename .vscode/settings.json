@@ -6,6 +6,7 @@
         "xstddef": "cpp",
         "initializer_list": "cpp",
         "xutility": "cpp",
-        "numeric": "cpp"
+        "numeric": "cpp",
+        "iostream": "cpp"
     }
 }
