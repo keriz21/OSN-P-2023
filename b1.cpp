@@ -63,25 +63,23 @@ int main(int argc, char const *argv[])
 {
     /* code */
     long long n,m;
-    // cin >> n;
-    // cin >> m;
+    cin >> n;
+    cin >> m;
 
-    n = 3; m = 4;
+    vector<long long> A;
+    vector<long long> B;
 
-    vector<long long> A = {5,1,3};
-    vector<long long> B = {8,5,4,9};
+    for(int i=0;i<n;i++){
+       long long temp;
+       cin >> temp;
+       A.push_back(temp);
+    }
 
-    // for(int i=0;i<n;i++){
-    //    long long temp;
-    //    cin >> temp;
-    //    A.push_back(temp);
-    // }
-
-    // for(int i=0;i<m;i++){
-    //     long long temp;
-    //    cin >> temp;
-    //    B.push_back(temp);
-    // }
+    for(int i=0;i<m;i++){
+        long long temp;
+       cin >> temp;
+       B.push_back(temp);
+    }
 
     sort(B.begin(),B.end(),greater<int>());
     dibandingkan(A,B);
